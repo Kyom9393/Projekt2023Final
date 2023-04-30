@@ -30,7 +30,7 @@ Field trip
 Library
 Cafeteria
 Recess
-Extracurricular activities
+activities
 Graduation
 Marker
 Project
@@ -57,5 +57,5 @@ English
 Language
 Art
 Music
-Physical education
+Physical
 Socialization
