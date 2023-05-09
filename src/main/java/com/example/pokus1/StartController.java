@@ -129,8 +129,8 @@ public class StartController implements Initializable{
 
     }
 
-    //Nastavit na 59
-    private int timer = 7;
+    //timer
+    private int timer = 59;
 
 
     //Runnable object r

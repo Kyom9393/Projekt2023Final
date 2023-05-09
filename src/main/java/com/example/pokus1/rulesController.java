@@ -1,12 +1,11 @@
 package com.example.pokus1;
-
-import javafx.event.ActionEvent;
+import javafx.scene.control.Hyperlink;
 import java.io.IOException;
-import java.net.URI;
+
 
 
 public class rulesController {
-    public void goBack(ActionEvent actionEvent) {
+    public void goBack() {
 
         HelloApplication ha = new HelloApplication();
         try {
@@ -18,7 +17,12 @@ public class rulesController {
     }
 
 
-    public void openGit(ActionEvent actionEvent) {
+    public void openGit() {
+        Hyperlink link = new Hyperlink("https://github.com/Kyom9393");
+        link.isVisited();
+        link.setVisited(true);
+
+
+
     }
 }
-

@@ -4,6 +4,7 @@ module com.example.pokus1 {
 
     requires com.dlsc.formsfx;
 
+
     opens com.example.pokus1 to javafx.fxml;
     exports com.example.pokus1;
 }

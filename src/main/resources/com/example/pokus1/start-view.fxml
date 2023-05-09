@@ -12,7 +12,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #3d3d3d; -fx-cursor: hand;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pokus1.StartController">
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #3d3d3d; -fx-cursor: hand;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pokus1.StartController">
     <children>
       <Ellipse fill="#a67e7e" layoutX="565.0" layoutY="115.0" radiusX="51.0" radiusY="53.0" stroke="BLACK" strokeType="INSIDE">
          <effect>
@@ -47,7 +47,7 @@
                </light>
             </Lighting>
          </effect></Ellipse>
-        <Text fx:id="seconds" layoutX="37.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="42.64990234375">
+        <Text fx:id="seconds" fill="WHITE" layoutX="37.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="42.64990234375">
             <font>
                 <Font name="Calibri" size="31.0" />
             </font>
@@ -77,7 +77,7 @@
                 <Font name="Calibri" size="31.0" />
             </font>
         </Text>
-        <TextField fx:id="userWord" alignment="CENTER" layoutX="160.0" layoutY="359.0" onKeyPressed="#startGame" prefHeight="43.0" prefWidth="513.0">
+        <TextField fx:id="userWord" alignment="CENTER" layoutX="163.0" layoutY="376.0" onKeyPressed="#startGame" prefHeight="43.0" prefWidth="513.0">
             <font>
                 <Font size="20.0" />
             </font>
