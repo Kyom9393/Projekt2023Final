@@ -57,6 +57,19 @@ public class StartController implements Initializable{
     @FXML
     private Label outputLabel;
 
+    @FXML
+    private Label nextWordLabel;
+
+
+    @FXML
+    private Label currentWordLabel;
+
+    @FXML
+    private Text secondsLabel;
+
+    @FXML
+    private Label timeLabel;
+
     ArrayList<String> words = new ArrayList<>();
 
     public void addToList() {
@@ -85,6 +98,11 @@ public class StartController implements Initializable{
     public void initialize(URL url, ResourceBundle resourceBundle) {
         playAgain.setVisible(false);
         playAgain.setDisable(true);
+
+        timeLabel.setVisible(false);
+        timeLabel.setDisable(true);
+
+
         seconds.setText("60");
         addToList();
         Collections.shuffle(words);
@@ -112,7 +130,7 @@ public class StartController implements Initializable{
     }
 
     //Nastavit na 59
-    private int timer = 59;
+    private int timer = 7;
 
 
     //Runnable object r
@@ -147,6 +165,17 @@ public class StartController implements Initializable{
                 if (timer == -2) {
                     playAgain.setVisible(true);
                     playAgain.setDisable(false);
+
+                    //Ukáže se accuracy, wpm a keystrokes hráče
+                    currentWordLabel.setVisible(false);
+                    nextWordLabel.setVisible(false);
+                    secondsLabel.setVisible(false);
+                    programWord.setVisible(false);
+                    secondProgramWord.setVisible(false);
+                    userWord.setVisible(false);
+                    seconds.setVisible(false);
+
+                    timeLabel.setVisible(true);
 
                     PrintWriter writer = null;
                     try {
@@ -196,7 +225,7 @@ public class StartController implements Initializable{
 
                 try {
                     FileWriter myWriter = new FileWriter("keystrokes.txt", true);
-                    myWriter.write(String.valueOf(userWord.getText().length() + "\n"));
+                    myWriter.write((userWord.getText().length() + "\n"));
                     myWriter.close();
 
                 } catch (IOException e) {

@@ -129,6 +129,21 @@
                   </Lighting>
                </effect>
             </Label>
+            <Button fx:id="infoBtn" layoutX="29.0" layoutY="27.0" mnemonicParsing="false" onAction="#infoAction" onKeyPressed="#infoAction" style="-fx-background-color: #e0bd69;" text="Info">
+               <font>
+                  <Font name="Microsoft YaHei Bold" size="15.0" />
+               </font>
+               <effect>
+                  <Lighting diffuseConstant="1.73" specularConstant="0.5" specularExponent="19.27" surfaceScale="2.33">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Button>
             </children></Pane>
     </children>
 </GridPane>

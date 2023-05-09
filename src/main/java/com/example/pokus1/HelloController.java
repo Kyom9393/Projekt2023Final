@@ -1,6 +1,5 @@
 package com.example.pokus1;
 
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
@@ -15,8 +14,6 @@ import java.util.Scanner;
 
 public class HelloController implements Initializable {
 
-    @FXML
-    private Label timeLabel;
     @FXML
     private Label displayUsername;
 
@@ -38,6 +35,7 @@ public class HelloController implements Initializable {
             } catch (FileNotFoundException e) {
                 e.printStackTrace();
             }
+            assert reader != null;
             String data = reader.nextLine();
             displayUsername.setText("Welcome, "+data);
 
@@ -51,7 +49,7 @@ public class HelloController implements Initializable {
     }
 
 
-    public void startAction(ActionEvent ae) throws IOException {
+    public void startAction() throws IOException {
         HelloApplication ha = new HelloApplication();
 
         File file= new File("username.txt");
@@ -68,5 +66,14 @@ public class HelloController implements Initializable {
 
     }
 
+    public void infoAction(){
 
+        HelloApplication ha = new HelloApplication();
+            try {
+                ha.changeScene("rules-view.fxml");
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
 }
+
