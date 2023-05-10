@@ -80,7 +80,7 @@
             <Font name="Microsoft YaHei" size="17.0" />
          </font>
       </Text>
-      <Text layoutX="79.0" layoutY="400.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WPM – total amount of WORDS typed CORRECTLY" wrappingWidth="663.4000244140625">
+      <Text layoutX="79.0" layoutY="400.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WPM – total amount of words typed correctly per minute" wrappingWidth="663.4000244140625">
          <font>
             <Font name="Microsoft YaHei" size="17.0" />
          </font>

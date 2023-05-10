@@ -1,7 +1,4 @@
 package com.example.pokus1;
-
-import com.example.pokus1.HelloApplication;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 
@@ -13,7 +10,7 @@ public class Controller2 {
     @FXML
     private TextField username;
 
-    public void submit(ActionEvent ae) throws IOException {
+    public void submit() throws IOException {
         String name = username.getText();
         FileWriter myObj = new FileWriter("username.txt");
         myObj.write(name);

@@ -14,7 +14,7 @@
 
 <AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #3d3d3d; -fx-cursor: hand;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pokus1.StartController">
     <children>
-      <Ellipse fill="#a67e7e" layoutX="565.0" layoutY="115.0" radiusX="51.0" radiusY="53.0" stroke="BLACK" strokeType="INSIDE">
+      <Ellipse fill="#a67e7e" layoutX="553.0" layoutY="117.0" radiusX="51.0" radiusY="53.0" stroke="BLACK" strokeType="INSIDE">
          <effect>
             <Lighting diffuseConstant="1.35" specularConstant="0.72" specularExponent="16.33" surfaceScale="2.05">
                <bumpInput>
@@ -25,7 +25,7 @@
                </light>
             </Lighting>
          </effect></Ellipse>
-      <Ellipse fill="#a67e7e" layoutX="417.0" layoutY="115.0" radiusX="51.0" radiusY="53.0" stroke="BLACK" strokeType="INSIDE">
+      <Ellipse fill="#a67e7e" layoutX="401.0" layoutY="115.0" radiusX="51.0" radiusY="53.0" stroke="BLACK" strokeType="INSIDE">
          <effect>
             <Lighting diffuseConstant="1.35" specularConstant="0.72" specularExponent="16.33" surfaceScale="2.05">
                <bumpInput>
@@ -36,7 +36,7 @@
                </light>
             </Lighting>
          </effect></Ellipse>
-      <Ellipse fill="#a67e7e" layoutX="272.0" layoutY="115.0" radiusX="51.0" radiusY="53.0" stroke="BLACK" strokeType="INSIDE">
+      <Ellipse fill="#a67e7e" layoutX="249.0" layoutY="115.0" radiusX="51.0" radiusY="53.0" stroke="BLACK" strokeType="INSIDE">
          <effect>
             <Lighting diffuseConstant="1.35" specularConstant="0.72" specularExponent="16.33" surfaceScale="2.05">
                <bumpInput>
@@ -57,27 +57,27 @@
                 <Font name="Microsoft JhengHei" size="14.0" />
             </font>
         </Text>
-        <Text layoutX="249.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WPM">
+        <Text layoutX="226.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WPM">
             <font>
                 <Font name="Microsoft YaHei" size="18.0" />
             </font>
         </Text>
-        <Text layoutX="376.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ACCURACY">
+        <Text layoutX="361.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ACCURACY" wrappingWidth="90.39999999999998">
             <font>
                 <Font name="Microsoft YaHei" size="15.0" />
             </font>
         </Text>
-        <Text fx:id="wordsPerMin" layoutX="237.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="70.0">
+        <Text fx:id="wordsPerMin" layoutX="214.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="70.0">
             <font>
                 <Font name="Calibri" size="31.0" />
             </font>
         </Text>
-        <Text fx:id="accuracy" layoutX="392.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="49.0">
+        <Text fx:id="accuracy" layoutX="376.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="49.0">
             <font>
                 <Font name="Calibri" size="31.0" />
             </font>
         </Text>
-        <TextField fx:id="userWord" alignment="CENTER" layoutX="163.0" layoutY="376.0" onKeyPressed="#startGame" prefHeight="43.0" prefWidth="513.0">
+        <TextField fx:id="userWord" alignment="CENTER" layoutX="144.0" layoutY="384.0" onKeyPressed="#startGame" prefHeight="43.0" prefWidth="513.0">
             <font>
                 <Font size="20.0" />
             </font>
@@ -92,17 +92,17 @@
             </Lighting>
          </effect>
         </TextField>
-        <Text fx:id="programWord" fill="WHITE" layoutX="328.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="word" textAlignment="CENTER" wrappingWidth="184.74749755859375">
+        <Text fx:id="programWord" fill="WHITE" layoutX="306.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" text="word" textAlignment="CENTER" wrappingWidth="184.74749755859375">
             <font>
                 <Font size="21.0" />
             </font>
         </Text>
-        <Text fx:id="secondProgramWord" fill="#ffffff5c" layoutX="328.0" layoutY="301.0" strokeType="OUTSIDE" strokeWidth="0.0" text="word" textAlignment="CENTER" wrappingWidth="184.74749755859375">
+        <Text fx:id="secondProgramWord" fill="#ffffff5c" layoutX="307.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="word" textAlignment="CENTER" wrappingWidth="184.74749755859375">
             <font>
                 <Font size="21.0" />
             </font>
         </Text>
-        <Button fx:id="playAgain" layoutX="342.0" layoutY="285.0" mnemonicParsing="false" onAction="#toMainMenu" prefHeight="42.0" prefWidth="149.0" style="-fx-background-color: #a67e7e;" text="Play again" textFill="WHITE">
+        <Button fx:id="playAgain" layoutX="326.0" layoutY="271.0" mnemonicParsing="false" onAction="#toMainMenu" prefHeight="42.0" prefWidth="149.0" style="-fx-background-color: #a67e7e;" text="Play again" textFill="WHITE">
          <font>
             <Font name="Microsoft JhengHei Bold" size="20.0" />
          </font>
@@ -116,12 +116,12 @@
                </light>
             </Lighting>
          </effect></Button>
-      <Text layoutX="524.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="KEYSTROKES">
+      <Text layoutX="512.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="KEYSTROKES">
          <font>
             <Font name="Microsoft YaHei" size="13.0" />
          </font>
       </Text>
-      <Label fx:id="outputLabel" layoutX="547.0" layoutY="79.0" prefHeight="38.0" prefWidth="49.0" text="0">
+      <Label fx:id="outputLabel" layoutX="536.0" layoutY="79.0" prefHeight="38.0" prefWidth="49.0" text="0">
          <padding>
             <Insets top="2.0" />
          </padding>
@@ -139,7 +139,7 @@
             <Font name="Microsoft YaHei" size="18.0" />
          </font>
       </Label>
-      <Label fx:id="timeLabel" alignment="CENTER" layoutX="238.0" layoutY="219.0" text="Time is up! Here are your results" textFill="WHITE">
+      <Label fx:id="timeLabel" alignment="CENTER" layoutX="220.0" layoutY="219.0" text="Time is up! Here are your results" textFill="WHITE">
          <font>
             <Font name="Microsoft YaHei" size="23.0" />
          </font>

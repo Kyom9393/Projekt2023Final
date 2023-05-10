@@ -25,7 +25,7 @@ public class HelloApplication extends Application {
 
         //Nastaví ikonu stage
         //Ikona musí být 32x32 nebo 16x16 px
-        stage.getIcons().add(new Image("C:\\Users\\42073\\Desktop\\Projekt2023\\src\\Images\\test.jpg"));
+        stage.getIcons().add(new Image("https://i.ibb.co/XDbLG6P/Keyboard-Project.png"));
 
 
         stage.setScene(scene);

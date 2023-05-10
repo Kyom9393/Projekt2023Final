@@ -1,13 +1,10 @@
 package com.example.pokus1;
 
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.text.Text;
@@ -15,7 +12,10 @@ import javafx.scene.text.Text;
 import java.io.*;
 import java.net.URL;
 import java.text.SimpleDateFormat;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Date;
+import java.util.ResourceBundle;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
@@ -45,11 +45,6 @@ public class StartController implements Initializable{
 
     @FXML
     private TextField userWord;
-
-    @FXML
-    private ImageView correct;
-    @FXML
-    private ImageView wrong;
 
     @FXML
     private Button playAgain;
@@ -89,7 +84,7 @@ public class StartController implements Initializable{
         }
     }
 
-    public void toMainMenu(ActionEvent ae) throws IOException {
+    public void toMainMenu() throws IOException {
         HelloApplication ha = new HelloApplication();
         ha.changeScene("hello-view.fxml");
     }
@@ -139,7 +134,6 @@ public class StartController implements Initializable{
         public void run() {
             if (timer > -1) {
                 seconds.setText(String.valueOf(timer));
-                timer -= 1;
             }
 
             else {
@@ -177,7 +171,7 @@ public class StartController implements Initializable{
 
                     timeLabel.setVisible(true);
 
-                    PrintWriter writer = null;
+                    PrintWriter writer;
                     try {
                         writer = new PrintWriter("keystrokes.txt");
                     } catch (FileNotFoundException e) {
@@ -189,8 +183,8 @@ public class StartController implements Initializable{
                     executor.shutdown();
                 }
 
-                timer -= 1;
             }
+            timer -= 1;
         }
     };
 
@@ -254,10 +248,9 @@ public class StartController implements Initializable{
 
             //Pokud slovo není zadané správně...
             //Nastaví se obrázek "wrong"
-            else {
-                //Nastavení obrázku
-                //Nastavení obrázku
-            }
+            //Nastavení obrázku
+            //Nastavení obrázku
+
 
             //"vymazat" textové pole
             userWord.setText("");
