@@ -37,6 +37,7 @@ public class HelloApplication extends Application {
         s.getScene().setRoot(pane);
     }
 
+
     public static void main(String[] args) {
         launch();
     }
